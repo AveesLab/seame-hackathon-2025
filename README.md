@@ -1,4 +1,4 @@
-# seame-hackathon-2025
+# 2025 SEA:ME Hackathon
 
 During this hackathon, your mission is to develop a autonomous driving system based on PiRacer Pro. We'll provide you a Raspberry Pi 4 board.
 
