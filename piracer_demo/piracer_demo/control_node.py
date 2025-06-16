@@ -3,18 +3,26 @@
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Float32
+from sensor_msgs.msg import Joy
 
 from piracer.vehicles import PiRacerPro
 from piracer.gamepads import ShanWanGamepad
 
 
+
 class ControlNode(Node):
     def __init__(self):
         super().__init__('control_node')
+        self.is_auto = False
+        self.steer = 0
+        self.throttle = 0
 
+        self.auto_steer = 0
+        self.auto_throttle = 0
+        self.manual_steer = 0
+        self.manual_throttle = 0
+        
         self.piracer = PiRacerPro()
-        self.shanwan_gamepad = ShanWanGamepad()
-        self.manual_mode = True  # 기본은 manual
 
         self.subscription = self.create_subscription(
             Float32,
@@ -23,39 +31,49 @@ class ControlNode(Node):
             10
         )
 
-        self.timer = self.create_timer(0.05, self.timer_callback)  # 10Hz
-        # self.get_logger().info("control_node started. Waiting for gamepad and steering_angle...")
+        self.pad = self.create_subscription(
+            Joy,
+            '/joy',
+            self.pad_callback,
+            10
+        )
+
+        self.timer = self.create_timer(0.2, self.timer_callback)  # 10Hz
 
     def timer_callback(self):
-        gamepad_input = self.shanwan_gamepad.read_data()
+        if self.is_auto:
+            self.steer = self.auto_steer
+            self.throttle = self.auto_throttle
+        else:
+            self.steer = self.manual_steer
+            self.throttle = self.manual_throttle
 
-        if gamepad_input.button_a:
-            self.manual_mode = True
-            self.get_logger().info("Manual mode (joystick control) activated.")
-        elif gamepad_input.button_x:
-            self.manual_mode = False
-            self.get_logger().info("Auto mode (topic control) activated.")
+        self.throttle = 0 # tmp
+        self.piracer.set_steering_percent(self.steer)
+        self.piracer.set_throttle_percent(self.throttle)
+        # self.get_logger().info(f"steer is {self.steer}")
+        # self.get_logger().info(f"throttle is {self.throttle}")
 
-        if self.manual_mode:
-            # 조이스틱 입력값에 따라 조향/속도 제어
-            steering = gamepad_input.analog_stick_left.x
-            throttle = gamepad_input.analog_stick_right.y * 0.5
+    def pad_callback(self, joy_msg):
+        ex_mode = self.is_auto
+        if joy_msg.buttons[0] == 1:
+            self.is_auto = False
+        elif joy_msg.buttons[3] == 1:
+            self.is_auto = True
 
-            self.piracer.set_steering_percent(steering)
-            self.piracer.set_throttle_percent(throttle)
+        # self.get_logger().info(f"mode is {self.is_auto}")
 
-            # self.get_logger().info(f"[MANUAL] Steering: {steering:.2f}, Throttle: {throttle:.2f}")
+        if self.is_auto != ex_mode:
+            # self.get_logger().info(f"mode changed to {self.is_auto}")
 
-    def steering_callback(self, msg: Float32):
-        if self.manual_mode:
-            # manual 모드일 땐 callback 무시
-            return
+        self.manual_steer = -joy_msg.axes[0]
+        self.manual_throttle = joy_msg.axes[3]
 
-        angle_deg = msg.data
-        steering_percent = max(-1.0, min(1.0, angle_deg / 30.0))  # 예: -30도 ~ 30도 → -1.0 ~ 1.0
+    def steering_callback(self, steer_msg):
+        # self.auto_throttle = steer_msg.data
+        self.auto_steer = steer_msg.data
 
-        self.piracer.set_steering_percent(steering_percent)
-        # self.get_logger().info(f"[AUTO] Steering set to: {steering_percent:.2f}")
+
 
 def main(args=None):
     rclpy.init(args=args)
