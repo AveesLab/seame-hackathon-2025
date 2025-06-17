@@ -4,10 +4,7 @@ import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Float32
 from sensor_msgs.msg import Joy
-
 from piracer.vehicles import PiRacerPro
-from piracer.gamepads import ShanWanGamepad
-
 
 
 class ControlNode(Node):
@@ -44,11 +41,11 @@ class ControlNode(Node):
         if self.is_auto:
             self.steer = self.auto_steer
             self.throttle = self.auto_throttle
+
         else:
             self.steer = self.manual_steer
             self.throttle = self.manual_throttle
 
-        self.throttle = 0 # tmp
         self.piracer.set_steering_percent(self.steer)
         self.piracer.set_throttle_percent(self.throttle)
         # self.get_logger().info(f"steer is {self.steer}")
@@ -61,17 +58,20 @@ class ControlNode(Node):
         elif joy_msg.buttons[3] == 1:
             self.is_auto = True
 
-        # self.get_logger().info(f"mode is {self.is_auto}")
+        self.get_logger().info(f"mode is {self.is_auto}")
 
         if self.is_auto != ex_mode:
-            # self.get_logger().info(f"mode changed to {self.is_auto}")
+            self.get_logger().info(f"mode changed to {self.is_auto}")
 
         self.manual_steer = -joy_msg.axes[0]
-        self.manual_throttle = joy_msg.axes[3]
+        self.manual_throttle = joy_msg.axes[3]*0.5
+        # self.get_logger().info(f"manual_steer is {self.manual_steer}")
+        # self.get_logger().info(f"manual_throttle is {self.manual_throttle}")
 
-    def steering_callback(self, steer_msg):
-        # self.auto_throttle = steer_msg.data
-        self.auto_steer = steer_msg.data
+    def steering_callback(self, steer_msg: Float32):
+        # self.auto_throttle = steer_msg.data*0.5   알아서 작성하기
+        self.auto_steer = max(-1.0, min(1.0, steer_msg.data / 15.0))
+        self.get_logger().info(f"auto_steer is {self.auto_steer}")
 
 
 
