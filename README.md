@@ -23,29 +23,29 @@ During this hackathon, your mission is to develop a autonomous driving system ba
 5번 -> SCL
 ```
 
-![image.png](image/image.png)
+![image.png](image/0.png)
 
 아래 완성본 참고
 
-![image.png](image/image (1).png)
+![image.png](image/1.png)
 
 - 방열팬 세팅
 
 1. 팬 나사 조립
 
-![image.png](image/image(2).png)
+![image.png](image/2.png)
 
 1. 방열 스티커 부착
 
-![image.png](image/image(3).png)
+![image.png](image/3.png)
 
 1. 방향 맞추어 라즈베리파이에 부착
 
-![image.png](image/image(4).png)
+![image.png](image/4.png)
 
 1. 팬 연장선 (암-수 점퍼선) 사용
 
-![image.png](image/image(5).png)
+![image.png](image/5.png)
 
 1. 라즈베리 파이 핀 사용하여 전원 공급
 
@@ -56,12 +56,12 @@ During this hackathon, your mission is to develop a autonomous driving system ba
 
 아래 핀 맵 참고
 
-![image.png](image/image(6).png)
+![image.png](image/6.png)
 
 완성 시 사진
 
-![image.png](image/image(7).png)
+![image.png](image/7.png)
 
 사용하지 않음
 
-![image.png](image/image(8).png)
+![image.png](image/8.png)
