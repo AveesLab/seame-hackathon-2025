@@ -27,7 +27,7 @@ During this hackathon, your mission is to develop a autonomous driving system ba
 
 아래 완성본 참고
 
-![image.png](image/image(1).png)
+![image.png](image/image (1).png)
 
 - 방열팬 세팅
 
