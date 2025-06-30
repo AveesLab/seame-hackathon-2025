@@ -68,39 +68,39 @@ During this hackathon, your mission is to develop a autonomous driving system ba
 
 ---
 
-## Raspberry Pi OS 셋팅(Ubuntu 22.04)
+# Raspberry Pi OS 셋팅(Ubuntu 22.04)
 
-# Step1. Window PC에서 Raspberry Pi Imager 실행
+## Step1. Window PC에서 Raspberry Pi Imager 실행
 
 (imager 다운 링크 : [Click_here](https://www.raspberrypi.com/software/))
 
 ![img1.daumcdn.png](readmeimage/9.png)
 
-# Step2. 기기선택 ⇒ Raspberry pi4를 선택
+## Step2. 기기선택 ⇒ Raspberry pi4를 선택
 
 ![img1.daumcdn.png](readmeimage/10.png)
 
 ![img1.daumcdn.png](readmeimage/11.png)
 
-# Step3. OS선택
+## Step3. OS선택
 
  Other general-purpose OS ⇒ Ubuntu ⇒ Ubuntu DeskTop 22.04(22.04.05도 가능)
 
 ![20250515_141858.png](readmeimage/12.png)
 
-# Step4. Window PC에 SD카드를 삽입 후, 해당 위치를 선택
+## Step4. Window PC에 SD카드를 삽입 후, 해당 위치를 선택
 
 ![img1.daumcdn.png](readmeimage/13.png)
 
-# Step5. 완료 (Writing 완료 후에 SD카드를 Raspberry Pi에 삽입)
+## Step5. 완료 (Writing 완료 후에 SD카드를 Raspberry Pi에 삽입)
 
 ![img1.daumcdn.png](readmeimage/14.png)
 
 ---
 
-## ROS2-humble 설치
+# ROS2-humble 설치
 
-# Step1. 링크를 타고 들어가서 설치를 진행해주세요.(사진도 참고)
+## Step1. 링크를 타고 들어가서 설치를 진행해주세요.(사진도 참고)
 
 [Ubuntu (deb packages) — ROS 2 Documentation: Humble  documentation](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
 
@@ -112,7 +112,7 @@ During this hackathon, your mission is to develop a autonomous driving system ba
 
 ![20250515_164135.png](readmeimage/16.png)
 
-# Step2. bash 설정
+## Step2. bash 설정
 
 터미널 창을 새로 열때마다 “source /opt/ros/humble/setup.bash” 해줘야함
 
