@@ -35,19 +35,19 @@ During this hackathon, your mission is to develop a autonomous driving system ba
 
 ![image.png](readmeimage/2.png)
 
-1. 방열 스티커 부착
+2. 방열 스티커 부착
 
 ![image.png](readmeimage/3.png)
 
-1. 방향 맞추어 라즈베리파이에 부착
+3. 방향 맞추어 라즈베리파이에 부착
 
 ![image.png](readmeimage/4.png)
 
-1. 팬 연장선 (암-수 점퍼선) 사용
+4. 팬 연장선 (암-수 점퍼선) 사용
 
 ![image.png](readmeimage/5.png)
 
-1. 라즈베리 파이 핀 사용하여 전원 공급
+5. 라즈베리 파이 핀 사용하여 전원 공급
 
 ```jsx
 17번(3V3) -> 빨강선
@@ -65,3 +65,34 @@ During this hackathon, your mission is to develop a autonomous driving system ba
 사용하지 않음
 
 ![image.png](readmeimage/8.png)
+
+---
+
+## Raspberry Pi OS 셋팅(Ubuntu 22.04)
+
+## Step1. Window PC에서 Raspberry Pi Imager 실행
+
+(imager 다운 링크 : [Click_here](https://www.raspberrypi.com/software/))
+
+![img1.daumcdn.png](readmeimage/9.png)
+
+## Step2. 기기선택 ⇒ Raspberry pi4를 선택
+
+![img1.daumcdn.png](readmeimage/10.png)
+
+![img1.daumcdn.png](readmeimage/11.png)
+
+## Step3. OS선택
+
+ Other general-purpose OS ⇒ Ubuntu ⇒ Ubuntu DeskTop 22.04(22.04.05도 가능)
+
+![20250515_141858.png](readmeimage/12.png)
+
+## Step4. Window PC에 SD카드를 삽입 후, 해당 위치를 선택
+
+![img1.daumcdn.png](readmeimage/13.png)
+
+## Step5. 완료 (Writing 완료 후에 SD카드를 Raspberry Pi에 삽입)
+
+![img1.daumcdn.png](readmeimage/14.png)
+
