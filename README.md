@@ -116,7 +116,7 @@ During this hackathon, your mission is to develop a autonomous driving system ba
 
 터미널 창을 새로 열때마다 “source /opt/ros/humble/setup.bash” 해줘야함
 
-귀찮으니 자동으로 설정하자.
+자동으로 설정하기
 
 “gedit ~/.bashrc” 명령어를 입력하여 bash 진입
 
@@ -152,7 +152,7 @@ sudo pip3 install luma.core
 sudo pip3 install Pillow
 ```
 
-1. i2c 활성화 
+2. i2c 활성화 
 
 ```jsx
 sudo raspi-config
@@ -192,13 +192,13 @@ sudo raspi-config
     python3 oled.pys
     ```
     
-1. 사용자 계정을 `i2c` 그룹에 추가
+3. 사용자 계정을 `i2c` 그룹에 추가
 
 I2C가 활성화되었는지 확인한 후, 현재 로그인된 사용자(여기서는 `avees`)를 `i2c` 그룹에 추가합니다.
 
 이 명령을 실행하면 `avees` 사용자가 `i2c` 그룹에 추가됩니다.
 
-1. oled 코드 작성
+4. oled 코드 작성
 
 ```jsx
 mkdir oled
@@ -266,7 +266,7 @@ except KeyboardInterrupt:
     time.sleep(1)
 ```
 
-1. 재부팅 및 실행
+5. 재부팅 및 실행
 
 ```jsx
 sudo reboot
