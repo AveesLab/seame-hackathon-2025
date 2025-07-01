@@ -12,9 +12,9 @@
 5번 -> SCL
 ```
 
-![1](img/1.png)
+![1](../img/1.png)
 <p align="center">
-  <img src="img/1.png" alt="1" width="400" />
+  <img src="../img/1.png" alt="1" width="400" />
 </p>
 
 아래 완성본 참고
