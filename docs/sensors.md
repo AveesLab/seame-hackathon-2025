@@ -1,4 +1,4 @@
-# Pi-Racer Setup
+## Pi-Racer Setup
 
 > 터미널 창에 아래 커맨드를 한줄씩 입력한다.
 ```
@@ -11,15 +11,16 @@ sudo raspi-config
 
 ---
 
-## Step.2 배터리 OLED 활성화
+## 배터리 OLED 활성화
 
 1. 아래 커맨드를 터미널에 한줄씩 입력한다.
+```
 sudo pip3 install luma.oled
 sudo pip3 install luma.core
 sudo pip3 install Pillow
+```
 
-
-2. i2c 활성화
+3. i2c 활성화
 ```
 sudo raspi-config
 ```
@@ -30,9 +31,9 @@ sudo raspi-config
 - 재부팅하라는 메시지가 나오면 재부팅한다.
 
 - 권한문제 발생시(PermissionError: [Errno 13] Permission denied: '/dev/i2c-1’)
-    2-1. i2c 권한 체크
+2-1. i2c 권한 체크
 ```    
-    ls -l /dev/i2c-1
+ls -l /dev/i2c-1
 ```
 만약
 ```
