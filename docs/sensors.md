@@ -1,4 +1,4 @@
-# Pi-Racer 구동 환경 설정
+# Pi-Racer Setup
 
 > 터미널 창에 아래 커맨드를 한줄씩 입력한다.
 ```
@@ -11,118 +11,57 @@ sudo raspi-config
 
 ---
 
-
-
-# Set Joystick
-
-jsx
-pip3 install piracer-py
-
-
-jsx
-mkdir remote_control
-cd remote_control
-
-
-jsx
-touch joystick_control.py
-
-
-jsx
-nano joystick_control.py
-
-
-아래 코드 입력 
-
-from piracer.vehicles import PiRacerPro
-from piracer.gamepads import ShanWanGamepad
-
-if __**name__** == '__**main__**':
-	
-	shanwan_gamepad = ShanWanGamepad()
-	piracer = PiRacerPro()
-	# piracer = PiRacerStandard()
-	
-	while True:
-	    gamepad_input = shanwan_gamepad.read_data()
-	
-	    throttle = gamepad_input.analog_stick_right.y * 0.5
-	    steering = -gamepad_input.analog_stick_left.x
-	
-	    print(f'throttle={throttle}, steering={steering}')
-	
-	    piracer.set_throttle_percent(throttle)
-	    piracer.set_steering_percent(steering)
-
-
-조이스틱 실행
-
-
----
-
-
 ## Step.2 배터리 OLED 활성화
 
-1. 의존성 체크(Tip 한줄씩 붙혀넣기할것)
-
-jsx
-
+1. 아래 커맨드를 터미널에 한줄씩 입력한다.
 sudo pip3 install luma.oled
 sudo pip3 install luma.core
 sudo pip3 install Pillow
 
 
-2. i2c 활성화 
-
-jsx
+2. i2c 활성화
+```
 sudo raspi-config
+```
 
-
-- 3 Interface Options (또는 5 Interfacing Options) 선택
+3 Interface Options (또는 5 Interfacing Options) 선택
 - P5 I2C 선택
-- Yes를 선택하여 I2C 기능을 활성화합니다.
-- 재부팅하라는 메시지가 나오면 재부팅합니다.
+- Yes를 선택하여 I2C 기능을 활성화한다.
+- 재부팅하라는 메시지가 나오면 재부팅한다.
 
 - 권한문제 발생시(PermissionError: [Errno 13] Permission denied: '/dev/i2c-1’)
-    
     2-1. i2c 권한 체크
-    
-    
-jsx
+```    
     ls -l /dev/i2c-1
+```
+만약
+```
+crw-rw---- 1 root **dialout** 89, 1 Feb 20 22:24 /dev/i2c-1
+```
+> 으로 나온다면 사용자를 dialout 그룹에 추가 해주어야한다.
+```
+sudo adduser avees dialout
+sudo reboot
+```
+> 이후
+```
+python3 oled.pys
+```
 
-    
-    만약
-    
-    
-jsx
-    crw-rw---- 1 root **dialout** 89, 1 Feb 20 22:24 /dev/i2c-1
-
-    
-    으로 나온다면 그룹추가 해주어야함
-    
-    2-2. 사용자 계정을 dialout 그룹에 추가
-    
-    
-jsx
-    sudo adduser avees dialout
-    sudo reboot
-
-    
-    이후
-    
-    
-jsx
-    python3 oled.pys
-
-    
 3. 사용자 계정을 i2c 그룹에 추가
+I2C가 활성화되었는지 확인한 후, 현재 로그인된 사용자(여기서는 avees)를 i2c 그룹에 추가한다.
+이 명령을 실행하면 avees 사용자가 i2c 그룹에 추가한다.
+```
+sudo adduser avees i2c
+```
 
-I2C가 활성화되었는지 확인한 후, 현재 로그인된 사용자(여기서는 avees)를 i2c 그룹에 추가합니다.
 
-이 명령을 실행하면 avees 사용자가 i2c 그룹에 추가됩니다.
 
-4. oled 코드 작성
+
+
+---
+
+5. oled 코드 작성
 
 jsx
 mkdir oled
@@ -132,7 +71,6 @@ gedit oled.py
 
 아래 코드 복사하여 붙혀넣기
 
-jsx
 import time
 from board import SCL, SDA
 import busio
@@ -192,12 +130,10 @@ except KeyboardInterrupt:
 
 5. 재부팅 및 실행
 
-jsx
 sudo reboot
 
 
 이후
-jsx
 cd ~/oled
 python3 oled.py
 
