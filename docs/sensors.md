@@ -68,3 +68,10 @@ python3 oled.pys
 ```
 sudo apt install ros-humble-camera-info-manager
 ```
+
+---
+## Test
+#### 하드웨어 세팅 테스트 코드
+```
+test.ipynb
+```
