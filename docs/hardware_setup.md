@@ -7,11 +7,11 @@
 
 라즈베리파이 핀 맵 번호 → donkey car 배터리 보드 핀 번호
 
-
-| 1번 -> 3V3 | 2번 -> 5V |
-| 3번 -> SDA | 4번 -> 5V |
-| 5번 -> SCL | 6번 -> GND |
-
+''' jsx
+1번 -> 3V3 | 2번 -> 5V
+3번 -> SDA | 4번 -> 5V
+5번 -> SCL | 6번 -> GND
+'''
 
 <p align="left">
   <img src="../img/7_rotated.png" alt="1" width="400" />
