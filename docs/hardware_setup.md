@@ -3,6 +3,12 @@
 ## Step 1. 하드웨어 조립
 > 아래 PDF 파일을 참고하여, Donkey Car와 Raspberry Pi를 조립한다.
 
+<table border="1" cellpadding="8" cellspacing="0">
+  <tr>
+    <td>여기에 박스 안의 글을 넣으세요.</td>
+  </tr>
+</table>
+
 [Piracer_pro_ai_kit-en2.pdf](https://github.com/user-attachments/files/20992632/Piracer_pro_ai_kit-en2.pdf)
 
 
