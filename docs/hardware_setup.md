@@ -43,9 +43,7 @@
   <img src="../img/5.png" alt="1" width="400" />
 </p>
 
-
-
-### 5. Raspberry Pi 핀 사용하여 전원 공급
+### 4. Raspberry Pi 핀 사용하여 전원 공급
 ```
 17번(3V3) -> 빨강선
 20번(GND) -> 검정선
