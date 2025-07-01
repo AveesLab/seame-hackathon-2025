@@ -13,6 +13,9 @@
 ```
 
 ![1](https://github.com/user-attachments/assets/a731b35a-e088-4464-a9b7-6d6783884e83)
+<p align="center">
+  <img src="images/example.png" alt="예시 이미지" width="400" />
+</p>
 
 아래 완성본 참고
 ![2](https://github.com/user-attachments/assets/2194190c-be9a-4126-9732-0feb3a417cb5)
