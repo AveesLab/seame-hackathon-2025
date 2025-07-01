@@ -15,6 +15,7 @@ During this hackathon, your mission is to develop a autonomous driving system ba
 - [ROS2-humble Installation](docs/ros2-humble_installation.md)
 - [Pi-Racer Setup](docs/piracer_setup.md)
 - [Joystick Setup](docs/joystick.md)
+- [USB Camera Setup](docs/usb_cam.md)
 
 # RaspBerryPi ~Donkey CAR HW setting
 
