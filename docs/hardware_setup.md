@@ -12,32 +12,43 @@
 5번 -> SCL
 ```
 
-![1](../img/1.png)
 <p align="center">
   <img src="../img/1.png" alt="1" width="400" />
 </p>
 
 아래 완성본 참고
-![2](https://github.com/user-attachments/assets/2194190c-be9a-4126-9732-0feb3a417cb5)
-
+<p align="center">
+  <img src="../img/2.png" alt="1" width="400" />
+</p>
 
 - 방열팬 세팅
 
 1. 팬 나사 조립
-![3](https://github.com/user-attachments/assets/ec31dcc0-3adf-4b44-b901-485b11406a17)
+<p align="center">
+  <img src="../img/3.png" alt="1" width="400" />
+</p>
 
 
-2. 방열 스티커 부착
-![4](https://github.com/user-attachments/assets/0b1b73ef-981a-446c-ae86-6fc7ce6166de)
+
+3. 방열 스티커 부착
+<p align="center">
+  <img src="../img/4.png" alt="1" width="400" />
+</p>
 
 
-3. 방향 맞추어 라즈베리파이에 부착
-![5](https://github.com/user-attachments/assets/49293cd2-1d44-4ec0-9c22-edc6a3aacf83)
+
+5. 방향 맞추어 라즈베리파이에 부착
+<p align="center">
+  <img src="../img/5.png" alt="1" width="400" />
+</p>
 
 
-4. 팬 연장선 (암-수 점퍼선) 사용
 
-![6](https://github.com/user-attachments/assets/401c8afa-1407-4a02-bb59-a3a74d92978a)
+7. 팬 연장선 (암-수 점퍼선) 사용
+
+<p align="center">
+  <img src="../img/6.png" alt="1" width="400" />
+</p>
 
 5. 라즈베리 파이 핀 사용하여 전원 공급
 ```jsx
@@ -46,14 +57,21 @@
 ```
 
 아래 핀 맵 참고
-![7](https://github.com/user-attachments/assets/76a9cab0-d317-496b-9810-945a5a58bbcc)
+<p align="center">
+  <img src="../img/7.png" alt="1" width="400" />
+</p>
 
 
 완성 시 사진
 
-![8](https://github.com/user-attachments/assets/85b061d6-f5a5-43f1-9a88-7fb86ba54250)
+<p align="center">
+  <img src="../img/8.png" alt="1" width="400" />
+</p>
 
 
 사용하지 않음
-![9](https://github.com/user-attachments/assets/0a5266a3-7d56-4c95-b945-e558ee1bef06)
+
+<p align="center">
+  <img src="../img/9.png" alt="1" width="400" />
+</p>
 
