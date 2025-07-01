@@ -10,7 +10,7 @@ During this hackathon, your mission is to develop a autonomous driving system ba
 # Tutorial 4 Hackaton
 
 ## Index
-- [Hardware Setup] (docs.hardware_setup.md)
+- [Hardware Setup](docs.hardware_setup.md)
 - [Raspberry Pi OS Setup (Ubuntu 22.04)](docs/raspi-os.md)
 - [ROS2-humble Installation](docs/ros2-humble_installation.md)
 - [Pi-Racer Setup](docs/piracer_setup.md)
