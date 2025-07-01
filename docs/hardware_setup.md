@@ -14,7 +14,7 @@
 ```
 
 <p align="left">
-  <img src="../img/7.png" alt="1" width="400" />
+  <img src="../img/7_rotated.png" alt="1" width="400" />
 </p>
 
 아래 완성본 참고
@@ -59,7 +59,7 @@
 
 아래 핀 맵 참고
 <p align="left">
-  <img src="../img/7.png" alt="1" width="400" />
+  <img src="../img/7_rotated.png" alt="1" width="400" />
 </p>
 
 
