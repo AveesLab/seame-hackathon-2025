@@ -28,7 +28,7 @@
 
 
 ## Step 3. 방열판 세팅
-### 1. 팬 나사를 조립
+### 1. 팬 나사 조립
 <p align="left">
   <img src="../img/3.png" alt="1" width="400" />
 </p>
