@@ -1,18 +1,20 @@
-
-
 # ROS2-humble 설치
 
-## Step1. 링크를 타고 들어가서 설치를 진행해주세요.(사진도 참고)
+## Step1. ROS2 Humble 설치.
 
 [Ubuntu (deb packages) — ROS 2 Documentation: Humble  documentation](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
 
 (사진 설명) Try Some examples까지 진행한다.
+<p align="left">
+  <img src="../img/21.png" alt="1" width="400" />
+</p>
 
-![20250515_162917.png](readmeimage/15.png)
 
 다음과 같은 화면이 뜨면 설치 성공(사진을 더블클릭하면 글씨가 잘보여요)
+<p align="left">
+  <img src="../img/22.png" alt="1" width="400" />
+</p>
 
-![20250515_164135.png](readmeimage/16.png)
 
 ## Step2. bash 설정
 
@@ -21,8 +23,10 @@
 자동으로 설정하기
 
 “gedit ~/.bashrc” 명령어를 입력하여 bash 진입
+<p align="left">
+  <img src="../img/23.webp" alt="1" width="400" />
+</p>
 
-![word-image-1.webp](readmeimage/17.webp)
 
 맨 밑에 줄에 “source /opt/ros/humble/setup.bash” 삽입 후 exit
 
