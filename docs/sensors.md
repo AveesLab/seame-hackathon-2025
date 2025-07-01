@@ -41,7 +41,7 @@ sudo raspi-config
 
 
 
-### Step 3. i2c 권한 체크
+#### i2c 권한 체크
 > 권한문제 발생시(PermissionError: [Errno 13] Permission denied: '/dev/i2c-1’)
 ```    
 ls -l /dev/i2c-1
@@ -50,25 +50,17 @@ ls -l /dev/i2c-1
 ```
 crw-rw---- 1 root **dialout** 89, 1 Feb 20 22:24 /dev/i2c-1
 ```
-> 으로 나온다면 사용자를 dialout 그룹에 추가 해주어야한다.
+> 으로 나온다면 사용자를 dialout, i2c 그룹에 추가 해주어야한다.
 ```
 sudo adduser avees dialout
+sudo adduser avees i2c
+
 sudo reboot
 ```
 > 이후
 ```
 python3 oled.pys
 ```
-
-3. 사용자 계정을 i2c 그룹에 추가
-
-I2C가 활성화되었는지 확인한 후, 현재 로그인된 사용자(여기서는 avees)를 i2c 그룹에 추가한다.
-
-아래 명령어를 통해 사용자를 i2c 그룹에 추가한다.
-```
-sudo adduser avees i2c
-```
-
 
 
 
