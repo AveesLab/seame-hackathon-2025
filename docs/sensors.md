@@ -57,7 +57,7 @@ sudo adduser avees i2c
 
 sudo reboot
 ```
-> 이후
+#### OLED 활성화
 ```
 python3 oled.pys
 ```
