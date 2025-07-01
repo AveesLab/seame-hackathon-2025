@@ -5,6 +5,10 @@
 아래 PDF 파일을 참고하여, Donkey Car와 Raspberry Pi를 조립한다.
 ```
 
+<details>
+아래 PDF 파일을 참고하여, Donkey Car와 Raspberry Pi를 조립한다.
+</details>
+
 [Piracer_pro_ai_kit-en2.pdf](https://github.com/user-attachments/files/20992632/Piracer_pro_ai_kit-en2.pdf)
 
 
