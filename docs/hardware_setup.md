@@ -1,4 +1,4 @@
-# RaspBerry Pi & Donkey Car HW Setup
+# Donkey Car & RaspBerry Pi HW Setup
 
 ## Step 1.
 > 아래 PDF 파일을 참고하여, Donkey Car와 Raspberry Pi를 조립한다.
