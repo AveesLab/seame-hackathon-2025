@@ -1,11 +1,20 @@
 ## Pi-Racer Setup
-
+#### piracer-py 패키지 설치
 > 터미널 창에 아래 커맨드를 한줄씩 입력한다.
 ```
 pip install piracer-py
 sudo apt install raspi-config
 sudo raspi-config
 ```
+#### i2c 통신을 활성화
+```
+sudo raspi-config
+```
+
+> 3. Interface Options (또는 5 Interfacing Options) 선택
+> - P5 I2C 선택
+>- Yes를 선택하여 I2C 기능을 활성화한다.
+> - 재부팅하라는 메시지가 나오면 재부팅한다.
 
 > 이후 finish 하여 빠져 나온다.
 
@@ -13,14 +22,14 @@ sudo raspi-config
 
 ## 배터리 OLED 활성화
 
-### Step 1. 아래 커맨드를 터미널에 한줄씩 입력한다.
+#### 아래 커맨드를 터미널에 한줄씩 입력한다.
 ```
 sudo pip3 install luma.oled
 sudo pip3 install luma.core
 sudo pip3 install Pillow
 ```
 
-### Step 2. i2c 활성화
+#### i2c 통신을 활성화한다.
 ```
 sudo raspi-config
 ```
