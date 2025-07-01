@@ -13,29 +13,31 @@ sudo raspi-config
 
 ## 배터리 OLED 활성화
 
-Step 1. 아래 커맨드를 터미널에 한줄씩 입력한다.
+### Step 1. 아래 커맨드를 터미널에 한줄씩 입력한다.
 ```
 sudo pip3 install luma.oled
 sudo pip3 install luma.core
 sudo pip3 install Pillow
 ```
 
-Step 2. i2c 활성화
+### Step 2. i2c 활성화
 ```
 sudo raspi-config
 ```
 
-    3. Interface Options (또는 5 Interfacing Options) 선택
-    - P5 I2C 선택
-    - Yes를 선택하여 I2C 기능을 활성화한다.
-    - 재부팅하라는 메시지가 나오면 재부팅한다.
+> 3. Interface Options (또는 5 Interfacing Options) 선택
+> - P5 I2C 선택
+>- Yes를 선택하여 I2C 기능을 활성화한다.
+> - 재부팅하라는 메시지가 나오면 재부팅한다.
 
-    - 권한문제 발생시(PermissionError: [Errno 13] Permission denied: '/dev/i2c-1’)
-Step 3. i2c 권한 체크
+
+
+### Step 3. i2c 권한 체크
+> 권한문제 발생시(PermissionError: [Errno 13] Permission denied: '/dev/i2c-1’)
 ```    
 ls -l /dev/i2c-1
 ```
-만약
+> 만약
 ```
 crw-rw---- 1 root **dialout** 89, 1 Feb 20 22:24 /dev/i2c-1
 ```
