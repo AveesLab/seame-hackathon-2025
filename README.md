@@ -16,3 +16,4 @@ During this hackathon, your mission is to develop a autonomous driving system ba
 - [Pi-Racer Setup](docs/piracer_setup.md)
 - [Joystick Setup](docs/joystick.md)
 - [USB Camera Setup](docs/usb_cam.md)
+- [Display](docs/display.md)
