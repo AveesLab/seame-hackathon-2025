@@ -62,8 +62,12 @@ sudo reboot
 python3 oled.pys
 ```
 
-
-
+---
+## USB CAM Setup
+#### 아래 커맨드를 터미널 창에 입력한다.
+```
+sudo apt install ros-humble-camera-info-manager
+```
 
 ---
 
