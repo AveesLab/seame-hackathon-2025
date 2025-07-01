@@ -12,33 +12,33 @@
 5번 -> SCL
 ```
 
-<p align="center">
+<p align="left">
   <img src="../img/1.png" alt="1" width="400" />
 </p>
 
 아래 완성본 참고
-<p align="center">
+<p align="left">
   <img src="../img/2.png" alt="1" width="400" />
 </p>
 
 - 방열팬 세팅
 
 1. 팬 나사 조립
-<p align="center">
+<p align="left">
   <img src="../img/3.png" alt="1" width="400" />
 </p>
 
 
 
 3. 방열 스티커 부착
-<p align="center">
+<p align="left">
   <img src="../img/4.png" alt="1" width="400" />
 </p>
 
 
 
 5. 방향 맞추어 라즈베리파이에 부착
-<p align="center">
+<p align="left">
   <img src="../img/5.png" alt="1" width="400" />
 </p>
 
@@ -46,7 +46,7 @@
 
 7. 팬 연장선 (암-수 점퍼선) 사용
 
-<p align="center">
+<p align="left">
   <img src="../img/6.png" alt="1" width="400" />
 </p>
 
@@ -57,21 +57,21 @@
 ```
 
 아래 핀 맵 참고
-<p align="center">
+<p align="left">
   <img src="../img/7.png" alt="1" width="400" />
 </p>
 
 
 완성 시 사진
 
-<p align="center">
+<p align="left">
   <img src="../img/8.png" alt="1" width="400" />
 </p>
 
 
 사용하지 않음
 
-<p align="center">
+<p align="left">
   <img src="../img/9.png" alt="1" width="400" />
 </p>
 
