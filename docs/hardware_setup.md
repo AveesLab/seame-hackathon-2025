@@ -1,21 +1,18 @@
 # Donkey Car & RaspBerry Pi HW Setup
 
-## Step 1. 하드웨어 조립
+## Step 1. Donkey Car 조립
 ```
-아래 PDF 파일을 참고하여, Donkey Car와 Raspberry Pi를 조립한다.
+아래 PDF 파일을 참고하여, Donkey Car를 조립한다.
 ```
-
-<details>
-아래 PDF 파일을 참고하여, Donkey Car와 Raspberry Pi를 조립한다.
-</details>
 
 [Piracer_pro_ai_kit-en2.pdf](https://github.com/user-attachments/files/20992632/Piracer_pro_ai_kit-en2.pdf)
 
 
-## Step 2. 방열판 부착
-라즈베리파이 핀 맵 번호 → donkey car 배터리 보드 핀 번호
-
-```jsx
+## Step 2. Donkey Car, Raspberry Pi 연결
+```
+아래 핀 맵 정보를 참고하여 Donkey Car와 Rasberry Pi를 연결한다.
+(핀을 잘못 연결할 경우 보드 고장의 원인이 될 수 있으니 주의.)
+```
 1번 -> 3V3 | 2번 -> 5V
 3번 -> SDA | 4번 -> 5V
 5번 -> SCL | 6번 -> GND
@@ -25,7 +22,10 @@
   <img src="../img/7_rotated.png" alt="1" width="400" />
 </p>
 
-아래 완성본 참고
+```
+참고 사진
+
+```
 <p align="left">
   <img src="../img/2.png" alt="1" width="400" />
 </p>
