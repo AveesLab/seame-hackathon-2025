@@ -12,9 +12,9 @@
 5번 -> SCL
 ```
 
-![1](https://github.com/user-attachments/assets/a731b35a-e088-4464-a9b7-6d6783884e83)
+![1](img/1.png)
 <p align="center">
-  <img src="images/example.png" alt="1" width="400" />
+  <img src="img/1.png" alt="1" width="400" />
 </p>
 
 아래 완성본 참고
