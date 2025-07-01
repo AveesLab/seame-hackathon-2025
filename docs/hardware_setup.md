@@ -24,7 +24,7 @@
   <img src="../img/7_rotated.png" alt="1" width="400" />
 </p>
 
-#### 참고 사진
+> 참고 사진
 <p align="left">
   <img src="../img/2.png" alt="1" width="400" />
 </p>
@@ -66,9 +66,8 @@
 <p align="left">
   <img src="../img/6.png" alt="1" width="400" />
 </p>
-```
-완성 시 사진
-```
+
+> 완성 시 사진
 <p align="left">
   <img src="../img/8.png" alt="1" width="400" />
 </p>
