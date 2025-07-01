@@ -1,4 +1,4 @@
-# ROS2-humble 설치
+# ROS2 Humble 설치
 
 ## Step1. ROS2 Humble 설치
 
