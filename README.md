@@ -7,7 +7,7 @@
 ![2025 해커톤 시스템 아키텍쳐](https://github.com/user-attachments/assets/4ab8e098-ef6f-4bd5-8b8e-cdb42a2befdd)
 
 ***
-# Tutorial 4 Hackaton
+# Tutorial for Hackaton
 
 ## Index
 - [Hardware Setup](docs/hardware_setup.md)
