@@ -29,17 +29,10 @@ sudo pip3 install luma.core
 sudo pip3 install Pillow
 ```
 
-#### i2c 통신을 활성화한다.
+#### OLED 활성화
 ```
-sudo raspi-config
+python3 oled.py
 ```
-
-> 3. Interface Options (또는 5 Interfacing Options) 선택
-> - P5 I2C 선택
->- Yes를 선택하여 I2C 기능을 활성화한다.
-> - 재부팅하라는 메시지가 나오면 재부팅한다.
-
-
 
 #### i2c 권한 체크
 > 권한문제 발생시(PermissionError: [Errno 13] Permission denied: '/dev/i2c-1’)
@@ -56,10 +49,6 @@ sudo adduser avees dialout
 sudo adduser avees i2c
 
 sudo reboot
-```
-#### OLED 활성화
-```
-python3 oled.py
 ```
 
 ---
