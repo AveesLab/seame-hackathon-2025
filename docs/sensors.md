@@ -59,7 +59,7 @@ sudo reboot
 ```
 #### OLED 활성화
 ```
-python3 oled.pys
+python3 oled.py
 ```
 
 ---
