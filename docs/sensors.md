@@ -30,18 +30,15 @@ sudo pip3 install Pillow
 ```
 
 ### oled.py 작성
-```
 > Home directory 에서 수행한다.
-
+```
 mkdir oled
 cd ~/oled
 gedit oled.py
-
+```
 > gedit을 통해 생성된 text file에 아래 링크의 코드를 복사 붙여넣기하세요.
 https://github.com/AveesLab/seame-hackathon-2025/blob/main/tutorials/oled.py
 > 저장 후 종료
-
-```
 
 
 #### OLED 활성화
