@@ -29,6 +29,20 @@ sudo pip3 install luma.core
 sudo pip3 install Pillow
 ```
 
+### oled.py 작성
+```
+> Home directory 에서 수행한다.
+
+mkdir oled
+cd ~/oled
+gedit oled.py
+
+
+
+
+```
+
+
 #### OLED 활성화
 ```
 python3 oled.py
