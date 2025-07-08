@@ -60,6 +60,7 @@ crw-rw---- 1 root **dialout** 89, 1 Feb 20 22:24 /dev/i2c-1
 ```
 > 으로 나온다면 사용자를 dialout, i2c 그룹에 추가 해주어야한다.
 ```
+sudo apt install -y i2c-tools
 sudo adduser avees dialout
 sudo adduser avees i2c
 
